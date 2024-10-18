@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .Nav {
+            height: 70px;
+            background: rgba(196, 191, 191, 0.62);
+            border: 3px solid black;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .logo img {
+            height: 75px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        .search {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search input {
+            border: 2px solid #ccc;
+            border-radius: 50px 0 0 50px;
+            width: 250px;
+            height: 35px;
+            padding: 0 15px;
+            transition: background-color 0.3s;
+        }
+
+        .search input:hover {
+            background-color: rgb(224, 216, 216);
+        }
+
+        .search button {
+            height: 35px;
+            border: none;
+            border-radius: 0 50px 50px 0;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 0 15px;
+            transition: background-color 0.3s;
+        }
+
+        .search button:hover {
+            background-color: #555;
+        }
+
+        .hover {
+            margin-left: 20px;
+        }
+
+        .hover select {
+            width: 100px;
+            height: 35px;
+            border-radius: 50px;
+            border: 2px solid #ccc;
+            background-color: rgb(224, 216, 216);
+            transition: background-color 0.3s;
+        }
+
+        .hover select:hover {
+            background-color: #ddd;
+        }
+
+        .hover select option {
+            background-color: white;
+            color: black;
+        }
+
+        .hover:hover option {
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="Nav">
+            <div class="logo">
+                <img src="Logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search Car Model">
+                <button type="submit">Search</button>
+            </div>
+            <div class="hover">
+                <select>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
